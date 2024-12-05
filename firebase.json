@@ -1,0 +1,51 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "quiz-4c367",
+          "appId": "1:522070672240:android:1de8afb1a15f14b1fa85b5",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "quiz-4c367",
+          "configurations": {
+            "android": "1:522070672240:android:1de8afb1a15f14b1fa85b5",
+            "ios": "1:522070672240:ios:73b01d1a1056b3a7fa85b5",
+            "web": "1:522070672240:web:032a4b04afba8720fa85b5",
+            "windows": "1:522070672240:web:9dbbb1be52152c3afa85b5"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "venv",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}
